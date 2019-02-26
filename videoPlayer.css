@@ -1,0 +1,97 @@
+.video{
+    width: 100%;
+
+}
+.c-video{
+    width: 100%;
+}
+.c-video:hover .controls{
+    transform: translateY(0);
+}
+.controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.2s;
+}
+.buttons{
+    padding: 10px;
+}
+.buttons button{
+    float: left;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+}
+.buttons button:before{
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialised;
+}
+.buttons button.play .fa-play{
+    display: block;
+}
+.buttons button.pause .fa-play{
+    display: none;
+}
+.buttons button.play .fa-pause{
+    display: none;
+}
+.buttons button.pause .fa-pause{
+    display: block;
+}
+.video-progress-bar{
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    cursor: pointer;
+}
+.purple-bar{
+    height: 10px;
+    background-color: #310c2e;
+    cursor: pointer;
+}
+.volume-bar{
+    background: rgba(0, 0, 0, 0.8);
+    width: 80px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 1px;
+    float: left;
+}
+.slider-vol{
+    width: 100%;
+    height: 100%;
+    background-color: #310c2e;
+    cursor: pointer;
+}
+.fa-volume-up,
+.fa-volume-down,
+.fa-volume-mute{
+    font-size: 17px;
+}
+.fa-volume-down,
+.fa-volume-mute{
+    display: none;
+}
+#volume{
+    width: 31px;
+}
+.video-time{
+    color: #fff;
+    float: left;
+}
